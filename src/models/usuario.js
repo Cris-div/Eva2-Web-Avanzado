@@ -9,6 +9,9 @@ const Usuario = sequelize.define('Usuario', {
     },
     password: DataTypes.STRING,
     rol: DataTypes.ENUM('ADMIN', 'VENDEDOR', 'ALMACEN')
+}, {
+    tableName: 'usuarios', 
+    timestamps: true       
 });
 
 module.exports = Usuario;
